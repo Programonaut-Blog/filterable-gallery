@@ -9,6 +9,33 @@
     <link rel="stylesheet" href="css/gallery.css">
 </head>
 <body>
+    <div id="categories">
+        <button class="category active" onclick="filterSelection('all')">All</button>
+        <button class="category" onclick="filterSelection('game')">Game</button>
+    </div>
+    
+    <div class="gallery-elements">
+        <!-- add the show-hidden class -->
+        <div class="gallery-element show-hidden game">
+            <img class="gallery-image" src="img/gallery-image.png" alt="">
+                <!-- add the hide-element class -->
+            <div class="description hide-element">
+                <h3 class="title">Gallery 1</h3>
+                <p class="subtitle">
+                    Description 1
+                </p>
+            </div>
+        </div>
+        <div class="gallery-element">
+            <img class="gallery-image" src="img/gallery-image.png" alt="">
+            <div class="description">
+                <h3 class="title">Gallery 2</h3>
+                <p class="subtitle">
+                    Description 2
+                </p>
+            </div>
+        </div>
+    </div>
     <!-- import javascript -->
     <script src="js/gallery.js"></script>    
 </body>
