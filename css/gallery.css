@@ -115,3 +115,15 @@ body {
         grid-template-columns: repeat(2, .5fr);
     }
 }
+
+@media (hover: none) {
+    .hide-element {
+        opacity: 1;
+        transition: all 0.2s ease-in-out;
+    }
+
+    .show-hidden:hover .hide-element {
+        opacity: 1;
+        transition: all 0.2s ease-in-out;
+    }
+}
