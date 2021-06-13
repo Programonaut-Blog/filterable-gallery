@@ -1,3 +1,25 @@
+html {
+    font-size: 20px;
+}
+
+@media screen and (max-width: 1680px) {
+    html {
+        font-size: 18px;
+    }
+}
+
+@media screen and (max-width: 736px) {
+    html {
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width: 360px) {
+    html {
+        font-size: 14px;
+    }
+}
+
 body {
     font-family: sans-serif;
 }
@@ -10,7 +32,6 @@ body {
 .category {
     font-weight: bold;
     font-size: 22px;
-    font-family: sans-serif;
     margin: 0 4px;
     padding: 5px 10px;
     border: none;
@@ -79,4 +100,18 @@ body {
 .show-hidden:hover .hide-element {
     opacity: 1;
     transition: all 0.2s ease-in-out;
+}
+
+/* Landscape phone to portrait tablet */
+@media (max-width: 767px) {
+    .gallery-elements {
+        grid-template-columns: repeat(3, .33fr);
+    }
+}
+
+/* Landscape phones and down */
+@media (max-width: 480px) {
+    .gallery-elements {
+        grid-template-columns: repeat(2, .5fr);
+    }
 }
